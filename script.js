@@ -23,7 +23,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     };
 
     try {
-        const response = await fetch('YOUR_CONTACT_FORM_API_URL', {
+        const response = await fetch('https://xsyriwlv82.execute-api.eu-west-1.amazonaws.com/dev/submit-form', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
