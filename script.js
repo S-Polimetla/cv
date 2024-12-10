@@ -31,6 +31,8 @@ document.getElementById('contact-form').addEventListener('submit', async functio
             body: JSON.stringify(data),
         });
 
+        console.log(response);
+
         if (response.ok) {
             alert('Thank you! Your message has been sent.');
             document.getElementById('contact-form').reset(); // Clear the form
