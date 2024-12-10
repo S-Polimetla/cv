@@ -31,15 +31,12 @@ document.getElementById('contact-form').addEventListener('submit', async functio
             body: JSON.stringify(data),
         });
 
-        console.log(response);
-
         if (response.ok) {
             alert('Thank you! Your message has been sent.');
             document.getElementById('contact-form').reset(); // Clear the form
-        } else {
-            alert('Thank you! This feature is still work in progress');
+        } else {            
             document.getElementById('contact-form').reset(); // Clear the form
-            // alert('Error sending message.');
+            alert('Error sending message.');
         }
     } catch (error) {
         console.error('Error:', error);
