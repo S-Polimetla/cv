@@ -23,7 +23,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     };
 
     try {
-        const response = await fetch('https://xsyriwlv82.execute-api.eu-west-1.amazonaws.com/dev/submit-form', {
+        const response = await fetch('https://ukcb9mgtmd.execute-api.eu-west-1.amazonaws.com/dev/email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
